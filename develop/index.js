@@ -1,14 +1,15 @@
 // include packages needed for application 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { features } = require('process');
+const {generate} = require('./utils/generateMarkdown.js');
+// const { features } = require('process');
 
 //Create an array for prompts 
-const userPrompts = () => {
-    inquirer.prompt ([
+const promptQuestions = () => {
+   return inquirer.prompt ([
             {
                 type: 'confirm',
-                name: 'feature',
+                name: 'addFeature',
                 message: 'Would you like to include a table of contents?',
                 default: false
             },
@@ -41,6 +42,11 @@ const userPrompts = () => {
                },
             },  
             {
+                type: 'input',
+                name: 'usage',
+                message: 'Please describe the uses of this project.'
+            },
+            {
                 type: 'confirm',
                 name: 'installation',
                 message: 'Do you need to install this application?',
@@ -51,6 +57,11 @@ const userPrompts = () => {
                name: 'license',
                message: 'What license did you use?',
                choices: ['MIT', 'apache style', 'ISC', 'GNU', 'N/A']
+           },
+           {
+               type: 'input',
+               name: 'contributors',
+               message: 'Who contributed to this project?'
            },
            {
                type: 'input',
@@ -78,9 +89,27 @@ const userPrompts = () => {
                  }
                },
            }
-        ]);
-      };
- 
+        ])
+        
 
- //call function and do something with data
-userPrompts();
+//create file function use fs
+    function writeToFile (filename, data) {
+        fs.writeFile(`./${filename.tolowercase().split(' ').join('')}.md`, data, (err) => {
+            if (err){
+                console.log(err)
+            }
+            console.log('Your readme has been generated!');
+        })
+
+    };
+
+//create a function to initialize the app
+function init() {
+    try {
+        //ask questions and make response 
+        const answer = await promptQuestions();
+        const generateReadme = generateMarkdown(answer);
+    }
+}
+
+
