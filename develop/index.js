@@ -1,24 +1,19 @@
 // include packages needed for application 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const {generate} = require('./utils/generateMarkdown.js');
+const generate = require('../utils/generateMarkdown.js');
+const path = require('path');
 // const { features } = require('process');
 
 //Create an array for prompts 
 const promptQuestions = () => {
    return inquirer.prompt ([
-            {
-                type: 'confirm',
-                name: 'addFeature',
-                message: 'Would you like to include a table of contents?',
-                default: false
-            },
             //figure out how to generate table of contents 
             {
                 type: 'input',
                 name: 'projectTitle',
                 message: 'What is the title of your project? (required)',
-            //validate to ensure they enter a value 
+                //validate to ensure they enter a value 
                 validate: projectTitleInput => {
                  if (projectTitleInput) {
                  return true;
@@ -95,25 +90,17 @@ const promptQuestions = () => {
                },
            }
         ])
+        .then(function(data) {
+            console.log(data);
+            fs.writeFileSync(path.join(process.cwd(), 'readme.md'), generate({
+                ...data
+            }));
+        })
+        
+    }
+
+    promptQuestions();
+    
         
 
-//create file function use fs
-    function writeToFile (filename, data) {
-        fs.writeFile(`./${filename.tolowercase().split(' ').join('')}.md`, data, (err) => {
-            if (err){
-                console.log(err)
-            }
-            console.log('Your readme has been generated!');
-        })
-
-    };
-
-//create a function to initialize the app
-function init() {
-    try {
-        //ask questions and make response 
-        const answer = await promptQuestions();
-        const generateReadme = generateMarkdown(answer);
-    }
-}
 
