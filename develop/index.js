@@ -53,10 +53,15 @@ const promptQuestions = () => {
                 default: false
            }, 
            {
+               type: 'input',
+               name: 'instructions',
+               message: 'Please provide instructions for installing your project.'
+           },
+           {
                type: 'list',
                name: 'license',
                message: 'What license did you use?',
-               choices: ['MIT', 'apache style', 'ISC', 'GNU', 'N/A']
+               choices: ['MIT', 'apacheStyle', 'GNU', 'N/A']
            },
            {
                type: 'input',
@@ -111,5 +116,4 @@ function init() {
         const generateReadme = generateMarkdown(answer);
     }
 }
-
 
