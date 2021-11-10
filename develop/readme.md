@@ -1,14 +1,16 @@
-## dgsadgagr
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+## no-more-readme
+![GitHub license](https://img.shields.io/badge/license-N/A-blue.svg)
 
 * [License](#license)
 
 ## License
-This project is licensed under the MIT license.
-## description 
-gaerqgev
+This project is licensed under the N/A license.
+## Description 
+A node application used to create a high quality readme with a few simple prompts.
       
 *[Description](##description)
+
+*[Visual](#visual)
 
 *[Usage](#usage)
 
@@ -16,21 +18,23 @@ gaerqgev
 
 *[Instructions](#instructions)
 
-*[license](#license)
+*[License](#license)
 
 *[Contributors](#contributors)
 
-## usage 
-geqrrgrgew
+#visual
+undefined
+## Usage 
+This project eliminates creating a readme after writing hundreds of lines of code at the end of a project!
 # Installation
-false
+true
 ## Instructions
-greqgrgqreg
+To install this project you must use npm init in your terminal command line and npm install inquirer. The dependencies necessary are in the package.JSON file. 
 ## License
-MIT
+N/A
 ## Contributors 
-greqgqergghgr
+Me (Bridget Schaefer)
 
 # Contact
-* GitHub :greqjkregjqrgngqre
-* E-mail :retrge
+* GitHub :bridgetvon
+* E-mail :bridget.schaefer31@gmail.com

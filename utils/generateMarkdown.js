@@ -28,7 +28,7 @@ This project is licensed under the ${license} license.`;
   return '';
 };
 
-
+//TODO extra: submit an image
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -36,10 +36,12 @@ function generateMarkdown(data) {
 ${renderLicenseBadge(data.license)}
 ${renderLicenseLink(data.license)}
 ${renderLicenseSection(data.license)}
-## description 
+## Description 
 ${data.description}
       
 *[Description](##description)
+
+*[Visual](#visual)
 
 *[Usage](#usage)
 
@@ -47,11 +49,11 @@ ${data.description}
 
 *[Instructions](#instructions)
 
-*[license](#license)
+*[License](#license)
 
 *[Contributors](#contributors)
 
-## usage 
+## Usage 
 ${data.usage}
 # Installation
 ${data.installation}
