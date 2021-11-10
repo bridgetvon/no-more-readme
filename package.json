@@ -1,0 +1,23 @@
+{
+  "name": "no-more-readme",
+  "version": "1.0.0",
+  "description": "A read me generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bridgetvon/no-more-readme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bridgetvon/no-more-readme/issues"
+  },
+  "homepage": "https://github.com/bridgetvon/no-more-readme#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "require-stack": "^1.0.2"
+  }
+}
