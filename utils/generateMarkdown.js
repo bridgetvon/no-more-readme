@@ -41,8 +41,6 @@ ${data.description}
       
 *[Description](##description)
 
-*[Visual](#visual)
-
 *[Usage](#usage)
 
 *[Installation](#installation)
