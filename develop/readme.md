@@ -6,7 +6,7 @@
 ## License
 This project is licensed under the N/A license.
 ## Description 
-A node application used to create a high quality readme with a few simple prompts.
+This project is a node application that genrates a read me with a few command line promts. 
       
 *[Description](##description)
 
@@ -22,14 +22,12 @@ A node application used to create a high quality readme with a few simple prompt
 
 *[Contributors](#contributors)
 
-#visual
-undefined
 ## Usage 
-This project eliminates creating a readme after writing hundreds of lines of code at the end of a project!
+As a developer, I want a README generator So that I can quickly create a proffesional README for a new project.
 # Installation
 true
 ## Instructions
-To install this project you must use npm init in your terminal command line and npm install inquirer. The dependencies necessary are in the package.JSON file. 
+To install this project you must have node.js and npm installed. Oncce these are installed use npm install inquirer from your command line. The package dependencis are listed in the package.json file. 
 ## License
 N/A
 ## Contributors 
