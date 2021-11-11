@@ -1,15 +1,13 @@
-## no-more-read-me
-![GitHub license](https://img.shields.io/badge/license-N/A-blue.svg)
+## ads
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 * [License](#license)
 
 ## License
-This project is licensed under the N/A license.
+This project is licensed under the MIT license.
 ## Description 
-This is a node application that generates a README through simple command line prompts.
+adsg
       
-*[Description](##description)
-
 *[Usage](#usage)
 
 *[Installation](#installation)
@@ -20,17 +18,19 @@ This is a node application that generates a README through simple command line p
 
 *[Contributors](#contributors)
 
-## Usage 
-As a developer, I want to be able tomake a proffessional README quickly for a new project.
-# Installation
+## Visual
 true
+## Usage 
+adg
+# Installation
+false
 ## Instructions
-To install this project you muct install node and npm. Be sure that there is a .gitignore file that includes node_modules and DS_Store. Lastly you must install inquirer (npm install inquirer). The dependenices will be included in the package.json file that is created during npm init. 
+af
 ## License
-N/A
+MIT
 ## Contributors 
-Bridget Schaefer
+g
 
 # Contact
-* GitHub :bridgetvon
-* E-mail :bridget.schaefer31@gmail.com
+* GitHub :ag
+* E-mail :fa

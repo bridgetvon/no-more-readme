@@ -37,6 +37,12 @@ const promptQuestions = () => {
                },
             },  
             {
+                type: 'confirm',
+                name: 'visual',
+                message: 'Would you like to include a visual?',
+                default: false
+            },
+            {
                 type: 'input',
                 name: 'usage',
                 message: 'Please describe the uses of this project.'

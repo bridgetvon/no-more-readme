@@ -39,8 +39,6 @@ ${renderLicenseSection(data.license)}
 ## Description 
 ${data.description}
       
-*[Description](##description)
-
 *[Usage](#usage)
 
 *[Installation](#installation)
@@ -51,6 +49,8 @@ ${data.description}
 
 *[Contributors](#contributors)
 
+## Visual
+${data.visual}
 ## Usage 
 ${data.usage}
 # Installation
